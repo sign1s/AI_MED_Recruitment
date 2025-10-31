@@ -1,1 +1,1 @@
-*Opis zadania rekrutacyjnego
+#Opis zadania rekrutacyjnego
