@@ -38,11 +38,11 @@ y = data["Cardiomegaly"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 #creating StandardScaler object
-#scaler=StandardScaler()
+scaler=StandardScaler()
 
 #applying scaling to data, so they are on similar scale
-#X_scaled_train=scaler.fit_transform(X_train)
-#X_scaled_test=scaler.transform(X_test)
+X_scaled_train=scaler.fit_transform(X_train)
+X_scaled_test=scaler.transform(X_test)
 
 #training(KNN)
 
@@ -310,3 +310,4 @@ for name, preds in models.items():
     print(confusion_matrix(y_test, preds))
     print("\nClassification Report:")
     print(classification_report(y_test, preds, digits=3))
+
